@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festejando a Conexão entre Campo e Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Festejando a Conexão entre o Campo e a Cidade</h1>
+    <p>Um projeto do Agrinho para unir culturas, saberes e pessoas</p>
+  </header>
+
+  <!-- Botões de acessibilidade -->
+  <div class="controls">
+    <button onclick="toggleTheme()">Alternar Tema</button>
+    <button onclick="increaseFont()">Aumentar Fonte</button>
+    <button onclick="decreaseFont()">Diminuir Fonte</button>
+  </div>
+
+  <main>
+    <section class="intro" id="intro">
+      <img src="Img/vida.jpg" alt="Campo e cidade conectados"title="blog.cowboystore.com.br">
+      <h2>Um Encontro de Mundos</h2>
+      <p>
+        A conexão entre o campo e a cidade é fundamental para a construção de um futuro mais justo, sustentável e colaborativo. Por meio da agricultura familiar, da educação no campo, das feiras locais e do acesso à tecnologia, celebramos essa união tão importante.
+      </p>
+    </section>
+
+    <section class="video" id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ofP_0ELi904?si=Nbh4U4QXFdsFt0XW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="content" id="conteudo">
+      <h2>Cultura, Educação e Sustentabilidade</h2>
+      <p>
+        As festas do campo, as tradições populares, a culinária rural e os saberes da terra fazem parte da identidade brasileira. Ao levar isso para a cidade, criamos pontes culturais, oportunidades de renda e trocas de conhecimento. O Agrinho valoriza essas conexões e promove eventos que celebram essas riquezas.
+      </p>
+      <img src="Img/festa.jpg" alt="Festa rural" title="https://www.tribunapr.com.br/">
+
+      <h3>Educação que Transforma</h3>
+      <p>
+        Escolas no campo e na cidade se unem para aprender sobre agricultura, meio ambiente, cidadania e inovação. Através de projetos integradores como este, os estudantes se tornam agentes de mudança em suas comunidades.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2025 © | Desenvolvido por Nicolly R. Tenório</p>
+  </footer>
+
+  <!-- Script para acessibilidade -->
+  <script>
+    let isDark = false;
+    let fontSize = 16;
+
+    function toggleTheme() {
+      isDark = !isDark;
+      document.body.style.backgroundColor = isDark ? "#121212" : "#ffffff";
+      document.body.style.color = isDark ? "#f0f0f0" : "#000000";
+    }
+
+    function increaseFont() {
+      fontSize += 2;
+      document.body.style.fontSize = fontSize + "px";
+    }
+
+    function decreaseFont() {
+      if (fontSize > 10) {
+        fontSize -= 2;
+        document.body.style.fontSize = fontSize + "px";
+      }
+    }
+  </script>
+</body>
+</html>
